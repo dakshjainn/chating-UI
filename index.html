@@ -3,232 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scaler Social</title>
-    
-    <link rel="stylesheet" href="style2.css" />
-    <style>
-        .navbar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: white;
-          padding: 10px 20px; /* Added padding for spacing */
-        }
-        .left-image {
-          margin-right: 20px; /* Margin on the right for spacing */
-        }
-        .right-image {
-          margin-left: 20px; /* Margin on the left for spacing */
-        }
-        .navbar img {
-          max-height: 50px;
-        }
-        .line {
-          border: none;
-          height: 1px;
-          background: #2a2424;
-          background: linear-gradient(to center, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-          opacity: 15%;
-        }
-        .main{
-            display: flex;
-        }
-        .post-box{
-            margin-top: 150px;
-            border-radius: 10px;
-            height: 50%;
-            width: 75%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-          
-        }
-
-        textarea{
-            background-color: whitesmoke;
-            border-radius: 10px;
-
-        }
-        #post-area{
-            border-style: none;
-        }
-
-        .post-upper{
-            display: flex;
-            flex-direction: column;
-        }
-        .post-lower{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-        }
-        #post-btn{
-            font-family: 'Poppins', sans-serif;
-            border-radius: 15px;
-            padding: 5px;
-            width: 60px;
-            color: white;
-            border-style: none;
-            background-color: rgb(66, 66, 248);
-        }
-        .chat-posts{
-            padding-left: 20px;
-            width: 25%;
-        }
-    
-
-        .post-main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        body{
-            font-family: 'Poppins', sans-serif;
-        }
-        
-      </style>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img class="left-image" src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png?1706888781" alt="Left Image">
-            <img class="right-image" src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png?1706888764" alt="Right Image">
-          </div>
-          <hr class="line">
-    </header>
-    <main>
-        <section class = "main">
-           <!-- posting box -->
-        <section class = "post-box">
-            <h3>Post your thoughts here</h3>
-            <div class="box">
-                <div class="post-upper">
-                    <div>
-                        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="#">
-                    </div>
-                    <div>
-                        <textarea name="#" id="post-area" cols="50" rows="10" style="resize: none;"></textarea>
-                    </div>
+    <div id="nav">
+        <div id="img1">
+            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png?1706888781" alt="">
+        </div>
+        <div id="img2">
+            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png?1706888764" alt="">
+        </div>
+    </div>
+    <div id="main">
+        <div id="left">
+            <div id="center_element">
+                <div id="para">
+                    <h3>Post your thoughts</h3>
                 </div>
-                <div class="post-lower">
-                    <span><span class="count_of_char">0</span>/100</span>
-                    <button id="post-btn">Post</button>
+                <div id="below_para">
+                    <div id="img_input">
+                        <div id="img"><img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt=""></div>
+                        <div id="input">
+                            <textarea name="post_input_box" id="post_input_box" placeholder="Type your thoughts here....." cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div id="count_button">
+                        <div id="count">
+                            <h5>0/100</h5>
+                        </div>
+                        <div id="post_button">
+                            <button id="postBTN">Post</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="chat-posts">
-            <div class="right-section">
-                <span class="feed-header">Your Feed</span>
-                <div class="card-container">
-                  <div class="tweet-card-molecules">
-                    <div class="tweet-card-atoms-1">
-                      <div class="container-2">
-                        <div class="image-3"></div>
-                        <div class="right-container">
-                          <div class="container-4">
-                            <div class="name-username">
-                              <span class="joanne-graham">Joanne Graham</span
-                              ><span class="joannegraham123">@joannegraham123</span>
-                              <div class="icons">
-                                <div class="icon-edit"></div>
-                                <div class="icon-delete"></div>
-                              </div>
-                            </div>
-                            <span class="text"
-                              >Inventore ducimus voluptas voluptatum id. Qui nihil
-                              cupiditate enim officia enim temporibus pariatur
-                            </span>
-                          </div>
-                          <div class="icons-5">
-                            <div class="icon-chat"></div>
-                            <div class="icon-heart"></div>
-                          </div>
-                        </div>
-                      </div>
+        </div>
+        <div id="right">
+            <!-- <div id="PostDIV">
+                <div id="posted_area">
+                    <div id="img"><img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt=""></div>
+                    <div id="input">
+                        <textarea name="post_input_box" id="post_input_box" placeholder="Type your thoughts here....." cols="30" rows="10"></textarea>
                     </div>
-                    <div class="container-bg">
-                      <div class="tweet-card-atoms-6">
-                        <div class="container-7">
-                          <div class="image-8"></div>
-                          <div class="right-container-9">
-                            <div class="container-a">
-                              <div class="name-username-b">
-                                <span class="joannegraham">@joannegraham123</span>
-                                <div class="icons-c">
-                                  <div class="icon-edit-d"></div>
-                                  <div class="icon-delete-e"></div>
-                                </div>
-                              </div>
-                              <span class="text-f">comment to the tweet</span>
-                            </div>
-                            <div class="icons-10">
-                              <div class="icon-heart-11"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tweet-card-atoms-12">
-                    <div class="container-13">
-                      <div class="image-14"></div>
-                      <div class="right-container-15">
-                        <div class="container-16">
-                          <div class="name-username-17">
-                            <span class="joannegraham-18">@joannegraham123</span>
-                            <div class="icons-19">
-                              <div class="icon-edit-1a"></div>
-                              <div class="icon-delete-1b"></div>
-                            </div>
-                          </div>
-                          <span class="text-1c"
-                            >Inventore ducimus voluptas voluptatum id. Qui nihil
-                            cupiditate enim officia enim temporibus pariatur
-                          </span>
-                        </div>
-                        <div class="icons-1d">
-                          <div class="icon-chat-1e"></div>
-                          <div class="icon-heart-1f"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tweet-card-atoms-20">
-                    <div class="container-21">
-                      <div class="image-22"></div>
-                      <div class="right-container-23">
-                        <div class="container-24">
-                          <div class="name-username-25">
-                            <span class="span-joannegraham">@shellyking</span>
-                            <div class="icons-26">
-                              <div class="icon-edit-27"></div>
-                              <div class="icon-delete-28"></div>
-                            </div>
-                          </div>
-                          <span class="text-29"
-                            >Inventore ducimus voluptas voluptatum id. Qui nihil
-                            cupiditate enim officia enim temporibus pariatur
-                          </span>
-                        </div>
-                        <div class="icons-2a">
-                          <div class="icon-chat-2b"></div>
-                          <div class="icon-heart-2c"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="scroll"><div class="rectangle"></div></div>
-              </div>
-        </section>
-    </section>
-
+                <div id="button_area">
+                    <button id="editBTN">edit</button>  
+                    <button id="likeBTN">like</button>
+                    <button id="commentBTN">comment</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
