@@ -1,874 +1,156 @@
-.main-container {
-  overflow: hidden;
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
 }
 
-.main-container,
-.main-container * {
-  box-sizing: border-box;
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
 }
 
-input,
-select,
-textarea,
-button {
-  outline: 0;
-}
-.topnav{
-    padding: 10px 20px;
-}
-.top_img2{
-    float: inline-end;
-}
-.main-container {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  position: relative;
-  width: 1280px;
-  height: 654px;
-  margin: 0 auto;
-}
-.left-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  gap: 16px;
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  padding: 184px 32px 0 32px;
-  background: rgba(236, 248, 255, 0.4);
-}
-.header-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 521px;
-  height: 22px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 1;
-}
-.tweet-card-atoms {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  width: 521px;
-  padding: 24px 24px 24px 24px;
-  background: #ffffff;
-  border: 1px solid #d6dee5;
-  z-index: 2;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.top-container {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 12px;
-  position: relative;
-  min-width: 0;
-  z-index: 3;
-}
-.top-section {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 48px;
-  z-index: 4;
-}
-.image {
-  flex-shrink: 0;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739)
-    no-repeat center;
-  background-size: cover;
-  z-index: 5;
-  border-radius: 50%;
-}
-.text-input {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  position: relative;
-  width: 413px;
-  height: 126px;
-  color: #91a1b7;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22.4px;
-  text-align: left;
-  z-index: 6;
-}
-.bottom-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  position: relative;
-  min-width: 0;
-  padding: 16px 0 0 0;
-  border-bottom: 1px solid #f4f6f9;
-  z-index: 7;
-}
-.character-count {
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 20px;
-  color: #61738e;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 8;
-}
-.cta-button {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 112px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  z-index: 9;
-}
-.cta-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  width: 112px;
-  padding: 8px 24px 8px 24px;
-  background: #0041ca;
-  z-index: 10;
-  overflow: hidden;
-  border-radius: 100px;
-}
-.post-button {
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 22px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 11;
-}
-.right-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 512px;
-  min-height: 0;
-  padding: 24px 24px 24px 24px;
-  background: #ffffff;
-  z-index: 12;
-}
-.feed-header {
-  align-self: stretch;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  min-width: 0;
-  height: 22px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 13;
-}
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 32px;
-  position: relative;
-  min-width: 0;
-  z-index: 14;
-}
-.tweet-card-molecules {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  position: relative;
-  background: #ffffff;
-  z-index: 15;
-  border-radius: 8px;
-}
-.tweet-card-atoms-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  padding: 24px 24px 24px 24px;
-  background: #ffffff;
-  border: 1px solid #d6dee5;
-  z-index: 16;
-  border-radius: 8px 8px 0 0;
-}
-.container-2 {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 12px;
-  position: relative;
-  z-index: 17;
-}
-.image-3 {
-  flex-shrink: 0;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739)
-    no-repeat center;
-  background-size: cover;
-  z-index: 18;
-  border-radius: 50%;
-}
-.right-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  gap: 16px;
-  position: relative;
-  z-index: 19;
-}
-.container-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 20;
-}
-.name-username {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 21;
-}
-.joanne-graham {
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 22px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 22;
-}
-.joannegraham123 {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 20px;
-  color: #61738e;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 23;
-}
-.icons {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 56px;
-  z-index: 24;
-}
-.icon-edit {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/028/original/edit.png?1706888661)
-    no-repeat center;
-  background-size: cover;
-  z-index: 25;
-  overflow: hidden;
-}
-.icon-delete {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643)
-    no-repeat center;
-  background-size: cover;
-  z-index: 26;
-  overflow: hidden;
-}
-.text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  width: 364px;
-  height: 78px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.6px;
-  text-align: left;
-  z-index: 27;
-}
-.icons-5 {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 32px;
-  position: relative;
-  height: 24px;
-  z-index: 28;
-}
-.icon-chat {
-  flex-shrink: 0;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619)
-    no-repeat center;
-  background-size: cover;
-  z-index: 29;
-  overflow: hidden;
-}
-.icon-heart {
-  flex-shrink: 0;
-  position: relative;
-  width: 28px;
-  height: 24px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679)
-    no-repeat center;
-  background-size: cover;
-  z-index: 30;
-  overflow: hidden;
-}
-.container-bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  position: relative;
-  padding: 0 0 0 56px;
-  z-index: 31;
-}
-.tweet-card-atoms-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  padding: 24px 24px 24px 16px;
-  background: #ffffff;
-  border-top: 1px solid #d6dee5;
-  border-right: 1px solid #d6dee5;
-  border-left: 1px solid #d6dee5;
-  z-index: 32;
-  overflow: hidden;
-  border-radius: 0 0 8px 8px;
-}
-.container-7 {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 12px;
-  position: relative;
-  z-index: 33;
-}
-.image-8 {
-  flex-shrink: 0;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739)
-    no-repeat center;
-  background-size: cover;
-  z-index: 34;
-  border-radius: 50%;
-}
-.right-container-9 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  gap: 16px;
-  position: relative;
-  z-index: 35;
-}
-.container-a {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 36;
-}
-.name-username-b {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 37;
-}
-.joannegraham {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 20px;
-  color: #61738e;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 38;
-}
-.icons-c {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 56px;
-  z-index: 39;
-}
-.icon-edit-d {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/028/original/edit.png?1706888661)
-    no-repeat center;
-  background-size: cover;
-  z-index: 40;
-  overflow: hidden;
-}
-.icon-delete-e {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643)
-    no-repeat center;
-  background-size: cover;
-  z-index: 41;
-  overflow: hidden;
-}
-.text-f {
-  align-self: stretch;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 26px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 42;
-}
-.icons-10 {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 32px;
-  position: relative;
-  height: 24px;
-  z-index: 43;
-}
-.icon-heart-11 {
-  flex-shrink: 0;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679)
-    no-repeat center;
-  background-size: cover;
-  z-index: 44;
-  overflow: hidden;
-}
-.tweet-card-atoms-12 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  padding: 24px 24px 24px 24px;
-  background: #ffffff;
-  border: 1px solid #d6dee5;
-  z-index: 45;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.container-13 {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 12px;
-  position: relative;
-  z-index: 46;
-}
-.image-14 {
-  flex-shrink: 0;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739)
-    no-repeat center;
-  background-size: cover;
-  z-index: 47;
-  border-radius: 50%;
-}
-.right-container-15 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  gap: 16px;
-  position: relative;
-  z-index: 48;
-}
-.container-16 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 49;
-}
-.name-username-17 {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 50;
-}
-.joannegraham-18 {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 20px;
-  color: #61738e;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 51;
-}
-.icons-19 {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 56px;
-  z-index: 52;
-}
-.icon-edit-1a {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/028/original/edit.png?1706888661)
-    no-repeat center;
-  background-size: cover;
-  z-index: 53;
-  overflow: hidden;
-}
-.icon-delete-1b {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643)
-    no-repeat center;
-  background-size: cover;
-  z-index: 54;
-  overflow: hidden;
-}
-.text-1c {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  width: 364px;
-  height: 78px;
-  color: #1a2c47;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.6px;
-  text-align: left;
-  z-index: 55;
-}
-.icons-1d {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 32px;
-  position: relative;
-  height: 24px;
-  z-index: 56;
-}
-.icon-chat-1e {
-  flex-shrink: 0;
-  position: relative;
-  width: 28px;
-  height: 24px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619)
-    no-repeat center;
-  background-size: cover;
-  z-index: 57;
-  overflow: hidden;
-}
-.icon-heart-1f {
-  flex-shrink: 0;
-  position: relative;
-  width: 28px;
-  height: 24px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643)
-    no-repeat center;
-  background-size: cover;
-  z-index: 58;
-  overflow: hidden;
-}
-.tweet-card-atoms-20 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 20px;
-  position: relative;
-  padding: 24px 24px 24px 24px;
-  background: #ffffff;
-  border: 1px solid #d6dee5;
-  z-index: 59;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.container-21 {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 12px;
-  position: relative;
-  z-index: 60;
-}
-.image-22 {
-  flex-shrink: 0;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739)
-    no-repeat center;
-  background-size: cover;
-  z-index: 61;
-  border-radius: 50%;
-}
-.right-container-23 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  gap: 16px;
-  position: relative;
-  z-index: 62;
-}
-.container-24 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 63;
-}
-.name-username-25 {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  z-index: 64;
-}
-.span-joannegraham {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 20px;
-  color: #61738e;
-  font-family: Inter, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.6px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 65;
-}
-.icons-26 {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 16px;
-  position: relative;
-  width: 56px;
-  z-index: 66;
-}
-.icon-edit-27 {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/028/original/edit.png?1706888661)
-    no-repeat center;
-  background-size: cover;
-  z-index: 67;
-  overflow: hidden;
-}
-.icon-delete-28 {
-  flex-shrink: 0;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background: url(https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643)
-    no-repeat center;
-  background-size: cover;
-  z-index: 68;
-  overflow: hidden;
-}
+#nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    padding: 14px 20px;
+    border: 1px solid black;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#main div{
+    height: 100%;
+}
+#main #left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece2d5;
+    border: 1px solid rgb(98, 94, 79);
+}
+
+
+
+#main #left #center_element{
+    height: 40%;
+    width: 50%;
+    background-color: white;
+}
+
+#main #left #center_element #para{
+    width: 100%;
+    height: 15%;
+    padding: 8px;
+}
+#main #left #center_element #below_para{
+    width: 100%;
+    height: 100%;
+}
+
+#main #left #center_element #below_para #img_input{
+    display: flex;
+    width: 100%;
+    height: 65%;
+    background-color: blue;
+}
+
+#main #left #center_element #below_para #img_input #img{
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+#main #left #center_element #below_para #img_input #input{
+    width: 85%;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+#main #left #center_element #below_para #img_input #input textarea{
+    width: 90%;
+    height: 50%;
+    border: none;
+}
+
+#main #left #center_element #below_para #count_button{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(231, 87, 10);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+#main #left #center_element #below_para #count_button h5{
+    font-size: 15px;
+}
+
+
+#main #left #center_element #below_para #count_button button{
+    width: 112px;
+    height: 35px;
+    background-color: #0034a2;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 3px;
+    text-align: center;
+    font-size: large;
+}
+
+#main #right{
+    width: 40%;
+    height: 100%;
+    /* background-color:black; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 100vh
+}
+
+#main #right #PostDIV{
+    width: 60%;
+    height: 20%;
+    margin: 10px;
+}
+#main #right #PostDIV #posted_area{
+    background-color: tomato;
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+#main #right #PostDIV #posted_area #img{
+    background-color: blue;
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
+
+#main #right #PostDIV #posted_area #img img{
+    width: 50px;
+    height: 50px;
+    /* padding: 5px; */
+}
+
+#main #right #PostDIV #button_area{
+    width: 100%;
+    height: 20%;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+/* #main #right #PostDIV #PostBOX #img_input #input textarea{
+    width: 90%;
+    height: 50%;
+    border: none;
+} */
