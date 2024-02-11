@@ -59,7 +59,7 @@ body{
     display: flex;
     width: 100%;
     height: 65%;
-    background-color: blue;
+/*     background-color: blue; */
 }
 
 #main #left #center_element #below_para #img_input #img{
@@ -73,7 +73,7 @@ body{
 #main #left #center_element #below_para #img_input #input{
     width: 85%;
     height: 100%;
-    background-color: antiquewhite;
+/*     background-color: antiquewhite; */
     padding: 10px;
 }
 #main #left #center_element #below_para #img_input #input textarea{
@@ -85,7 +85,7 @@ body{
 #main #left #center_element #below_para #count_button{
     width: 100%;
     height: 15%;
-    background-color: rgb(231, 87, 10);
+/*     background-color: rgb(231, 87, 10); */
     display: flex;
     justify-content: space-between;
     padding: 0px 15px;
